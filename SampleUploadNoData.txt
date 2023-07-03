@@ -1,0 +1,16 @@
+import logging
+import uuid
+from docx.enum.text import WD_COLOR_INDEX
+
+import azure.functions as func
+from azure.keyvault.secrets import SecretClient
+from azure.identity import DefaultAzureCredential
+
+from docx import Document
+import pandas as pd
+import os
+from shareplum import Site
+from shareplum import Office365
+from shareplum.site import Version
+from shareplum.errors import ShareplumRequestError
+import tempfi
